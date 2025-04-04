@@ -20,8 +20,7 @@ add_action('wp_enqueue_scripts', 'chatgpt_enqueue_scripts');
 
 // AJAX handler function for ChatGPT API call
 function chatgpt_ajax_handler($indepth) {
-    //$api_key = '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';
-	$api_key = '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';
+    $api_key = 'KEY HERE';
     $question = sanitize_text_field($_POST['question']);
     $counter = $_POST['counter'];
     $api_url = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
